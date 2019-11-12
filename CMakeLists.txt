@@ -1,7 +1,10 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_CXX_FLAGS "-std=c++11")
 
 find_package(Qt5Core REQUIRED)
+find_package(Qt5Gui REQUIRED)
+find_package(Qt5Widgets REQUIRED)
 find_package(gazebo REQUIRED)
 
 QT5_ADD_RESOURCES(resources_RCC resources.qrc)
@@ -15,4 +18,5 @@ add_library(custom_gazebo_style SHARED
 )
 target_link_libraries(custom_gazebo_style ${GAZEBO_LIBRARIES}
     ${Qt5Core_LIBRARIES}
+    ${Qt5Gui_LIBRARIES}
     ${Qt5Widgets_LIBRARIES})
