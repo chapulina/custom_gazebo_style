@@ -24,7 +24,7 @@ GZ_REGISTER_GUI_PLUGIN(CustomGazeboStyle)
 CustomGazeboStyle::CustomGazeboStyle()
   : GUIPlugin()
 {
-  QFile file(":/custom_style.qss");
+  QFile file(":/qss/custom_style.qss");
   file.open(QFile::ReadOnly);
   auto styleSheet = QString(file.readAll());
 

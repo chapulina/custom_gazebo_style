@@ -1,6 +1,10 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource>
-  <file>custom_style.qss</file>
+  <file>qss/custom_style.qss</file>
+  <file>qss/greenish.qss</file>
+  <file>qss/orangish.qss</file>
+  <file>qss/redish.qss</file>
+  <file>qss/yellowish.qss</file>
 </qresource>
 </RCC>
 
